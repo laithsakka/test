@@ -1,4 +1,13 @@
---add line before 
 git remote add origin https://github.com/laithsakka/test.git
---add line after 
--add line 2
+// check changes you made
+git status
+
+// check if somebody updates the remote
+git fetch 
+
+// pull changes and rebase yours apon them 
+git pull --rebase
+
+//when you made changes but dont want them to be in a new commit.
+git commit --ammend
+
