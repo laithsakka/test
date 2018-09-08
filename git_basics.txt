@@ -1,0 +1,36 @@
+
+// intiate a git repo in a direcotry and set the remote url
+git init 
+git remote add origin https://github.com/laithsakka/test.git
+
+// check if somebody updates the remote branches
+git fetch 
+
+// pull changes on the remote that you dont have
+git pull
+
+// pull changes and rebase yours apon them (use it when you have local changes)
+git pull --rebase
+
+// check if you have changes not added(red) or not commited (green)
+git status
+
+//add files or changes to a new commit
+git add
+
+//perform the commit with a message
+git commimt -m"message"
+
+//append changes to the previous commit rather than creating new one.
+git commit --ammend
+
+//push changes to remote.
+git push
+
+-- if after doing git pull --rebase conflicts exists you need to :
+1)fix the modified files by removing conflicts.(edit)
+2)add them 
+3)git rebase --continue 
+
+
+
